@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Task 2</title>
 </head>
 <body>
-    
+    <section>
+        <form>
+            <fieldset>
+                <legend>Contact us</legend>
+                <div>
+                    <label for="name">Name</label><br>
+                    <input 
+                        name="name" 
+                        placeholder="Enter name"
+                        required>
+                </div>
+                <div>
+                    <label for="email">Email</label><br>
+                    <input 
+                        name="email"
+                        type="email" 
+                        placeholder="email@test.com"
+                        required>
+                </div>
+                <div>
+                    <input 
+                        name="accepted"
+                        type="checkbox" 
+                        required>
+                    <label for="accepted">Accept terms and service?</label>
+                </div>
+                <div>
+                    <label for="message"></label><br>
+                    <textarea name="message" id="" cols="30" rows="10" required></textarea>
+                </div>
+                <br><br>
+                <button type="submit">
+                    Send message
+                </button>
+            </fieldset>
+        </form>
+    </section>
 </body>
 </html>
