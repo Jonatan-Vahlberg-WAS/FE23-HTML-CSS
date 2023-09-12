@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product form</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+            <li>
+                <a href="./about-us.html">About us</a>
+            </li>
+            <li>
+                <a href="./task-1.html">Products</a>
+            </li>
+            <li>
+                <a href="./product-form.html">Product Form</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--Form elements-->
+    <form>
+        <fieldset>
+            <legend>Product form</legend>
+            <div>
+                <label for="title">
+                    Title
+                </label><br>
+                <!--Input element-->
+                <input 
+                    name="title" 
+                    placeholder="Title of product"
+                    type="text"
+                    required
+                >
+            </div>
+            <div>
+                <label for="price">
+                    Price
+                </label><br>
+                <!--Input element-->
+                <input 
+                    name="price" 
+                    placeholder="xx kr" 
+                    type="number"
+                    min="0"
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="description">
+                    Description
+                </label><br>
+                <!--Text area-->
+                <textarea
+                    name="description"
+                ></textarea>
+            </div>
+            <div>
+                <input type="checkbox" name="category-1">
+                <label for="category-1">
+                    Electronic
+                </label>
+            </div>
+            <div>
+                <input type="checkbox" name="category-2">
+                <label for="category-2">
+                    Food
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="radio" value="1" id="">
+                <label for="radio">Only online</label>
+            </div>
+            <div>
+                <input type="radio" name="radio" value="2" id="">
+                <label for="radio">In store & Online</label>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
