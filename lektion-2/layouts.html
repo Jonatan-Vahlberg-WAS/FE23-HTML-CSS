@@ -97,6 +97,66 @@
             justify-content: center;
         }
 
+        .grid-trad {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 8px;
+        }
+
+        .grid-trad div {
+            padding: 24px;
+            background-color: #fff;
+        }
+        /* alternate color */
+        .grid-trad div:nth-child(odd) {
+            background-color: #ee44ee;
+        }
+
+        .grid-trad div:nth-child(even) {
+            background-color:  #44eeee;
+        }
+
+        .grid-dynamic {
+            grid-template-columns: 1fr 50px 3fr;
+        }
+
+        .grid-assigned {
+            display: grid;
+            grid-template-columns: 1fr 2fr 2fr 1fr;
+            grid-template-rows: 50px 200px 100px 50px;
+            gap: 16px;
+        }
+
+        .grid-assigned div {
+            background-color: #fff;
+        }
+
+        .grid-assigned div:first-child {
+            grid-row: 1;
+            grid-column: 1/5;
+        }
+
+        .grid-assigned div:nth-child(2) {
+            grid-row: 2/4;
+            grid-column: 1;
+        }
+
+        .grid-assigned div:nth-child(3) {
+            grid-row: 2/4;
+            grid-column: 2/4;
+        }
+
+        .grid-assigned div:nth-child(4) {
+            grid-row: 2/4;
+            grid-column: 4;
+        }
+
+        .grid-assigned div:nth-child(5) {
+            grid-row: 4;
+            grid-column: 1/5;
+        }
+
+
     </style>
 </head>
 <body>
@@ -210,6 +270,44 @@
             </div>
         </div>
         
+    </section>
+    <h2>Grid layout</h2>
+    <section class="grid-section">
+        <h3>Even grid</h3>
+        <div class="grid-trad">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <h3>Dynamic grid</h3>
+        <div class="grid-trad grid-dynamic">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <h3>Assiged grid</h3>
+        <div class="grid-assigned">
+            <div>
+                Header
+            </div>
+            <div>Left</div>
+            <div>Main content</div>
+            <div>Right</div>
+            <div>Footer</div>
+        </div>
     </section>
 </body>
 </html>
