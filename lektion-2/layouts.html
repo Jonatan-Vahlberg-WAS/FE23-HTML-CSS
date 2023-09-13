@@ -32,9 +32,15 @@
             color: var(--card-text--dark);
         }
 
+        .product--small {
+            width: 200px;
+            margin: 0;
+        }
+
         .product__image {
             border-radius: var(--card-radius);
             height: 200px;
+            position: relative;
         }
 
         .product__image img {
@@ -65,13 +71,39 @@
             color: var(--card-background--dark);
         }
 
+        .product__share {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            padding: 4px 2px;
+            background-color: #fff;
+            font-size: 22px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            gap: 4px;
+            border-radius: 4px;
+        }
+
+        .product__share span {
+            color: red;
+        }
+
+        .flex-section {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
     </style>
 </head>
 <body>
     <h1>Layouts</h1>
 
     <h2>Traditional layout</h2>
-    <section class="product">
+    <div class="product">
         <div class="product__image">
             <img src="./img_400.jpeg" alt="Product image">
         </div>
@@ -86,9 +118,9 @@
                 </button>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="product product--dark">
+    <div class="product product--dark">
         <div class="product__image">
             <img src="./img_400.jpeg" alt="Product image">
         </div>
@@ -103,6 +135,81 @@
                 </button>
             </div>
         </div>
+    </div>
+
+    <h2>Flex layout</h2>
+    <section class="flex-section">
+        <div class="product product--small">
+            <div class="product__image">
+                <img src="./img_400.jpeg" alt="Product image">
+                <div class="product__share">
+                    <span>♥</span>
+                    <span>×</span>
+                    <span>⚡</span>
+                </div>
+            </div>
+            <div class="product__details">
+                <h3>Clean drinking water</h3>
+                <div class="product__actions">
+                    <button>
+                        Buy now
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="product product--small">
+            <div class="product__image">
+                <img src="./img_400.jpeg" alt="Product image">
+            </div>
+            <div class="product__details">
+                <h3>Clean drinking water</h3>
+                <div class="product__actions">
+                    <button>
+                        Buy now
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="product product--small">
+            <div class="product__image">
+                <img src="./img_400.jpeg" alt="Product image">
+            </div>
+            <div class="product__details">
+                <h3>Clean drinking water</h3>
+                <div class="product__actions">
+                    <button>
+                        Buy now
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="product product--small">
+            <div class="product__image">
+                <img src="./img_400.jpeg" alt="Product image">
+            </div>
+            <div class="product__details">
+                <h3>Clean drinking water</h3>
+                <div class="product__actions">
+                    <button>
+                        Buy now
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="product product--small">
+            <div class="product__image">
+                <img src="./img_400.jpeg" alt="Product image">
+            </div>
+            <div class="product__details">
+                <h3>Clean drinking water</h3>
+                <div class="product__actions">
+                    <button>
+                        Buy now
+                    </button>
+                </div>
+            </div>
+        </div>
+        
     </section>
 </body>
 </html>
