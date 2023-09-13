@@ -4,9 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Repition</title>
+    <style>
+        html {
+            font-family: sans-serif;
+        }
+        header {
+            padding: 8px 16px 8px 16px;
+            background-color: bisque;
+        }
+        h1 {
+            color: #600a00;
+        }
+
+        main {
+            background-color: #fcdafc;
+            padding: 4px 16px;
+        }
+
+        img {
+            border-width: 4px;
+            border-color: white;
+            border-style: solid;
+
+            border: 4px white solid;
+        }
+        p#main-article__text {
+            line-height: 22px;
+            font-size: 14px;
+        }
+
+        table,
+        tr,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: white;
+            padding: 4px;
+        }
+        
+        td {
+            background-color: #dfdfdf;
+            padding: 4px;
+        }
+
+        h2 {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: bisque; 
+            padding: 16px;
+        }
+
+        footer a {
+            color: #353535
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Title of page</h1>
+    <header>
+        <h1>Title of page</h1>
+    </header>
     <main>
         <section id="main-article">
             <h2>Title of news article</h2>
@@ -21,7 +84,7 @@
                 width="320"
                 height="180"
             >
-            <p>
+            <p id="main-article__text">
                 <strong>Lorem ipsum</strong> dolor sit amet consectetur adipisicing elit. Sapiente suscipit eaque eius dolor quasi itaque, alias natus voluptatem totam laudantium aspernatur inventore obcaecati pariatur vitae unde, a earum at quia.
                 Suscipit nihil accusantium ipsam tenetur eaque iusto veniam at aliquam. Ipsam tenetur consectetur quisquam omnis libero voluptatum ut accusamus. Aperiam accusamus recusandae quo et eaque similique incidunt cum at ex.
             </p>
@@ -56,6 +119,7 @@
         </section>
         <hr>
         <section id="comment-form">
+            <h2>Comments</h2>
             <form>
                 <textarea
                     name="message"
@@ -68,7 +132,7 @@
             </form>
         </section>
     </main>
-    <footer style="background-color: bisque; padding: 16px; margin: 32px 32px 0;">
+    <footer>
         <a href="./repition.html">
             Home
         </a><br>
