@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts</title>
+    <style>
+        * {
+            --background: #b5bfcb;
+            --card-radius: 4px;
+            --card-background: #fff;
+            --card-background--dark: #222222;
+            --card-text: #222222;
+            --card-text--dark: #d6d6d6;
+
+
+        }
+        body {
+            background-color: var(--background);
+        }
+        .product {
+            background-color: var(--card-background);
+            color: var(--card-text);
+            width: 400px;
+            margin: 16px auto;
+            border-radius: var(--card-radius);
+
+        }
+
+        .product--dark {
+            background-color: var(--card-background--dark);
+            color: var(--card-text--dark);
+        }
+
+        .product__image {
+            border-radius: var(--card-radius);
+            height: 200px;
+        }
+
+        .product__image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: var(--card-radius) var(--card-radius) 0 0;
+        }
+
+        .product__details {
+            padding: 24px;
+        }
+
+        .product__actions {
+            margin-left: auto;
+        }
+
+        .product__actions button {
+            padding: 8px 16px;
+            background-color: var(--card-text);
+            color: var(--card-background);
+            border: 0;
+            border-radius: 100px
+        }
+
+        .product--dark .product__actions button {
+            background-color: var(--card-text--dark);
+            color: var(--card-background--dark);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Layouts</h1>
+
+    <h2>Traditional layout</h2>
+    <section class="product">
+        <div class="product__image">
+            <img src="./img_400.jpeg" alt="Product image">
+        </div>
+        <div class="product__details">
+            <h3>Clean drinking water</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sit eaque dolorum incidunt, omnis officia, dolore accusamus, nostrum harum vero unde reprehenderit eum modi accusantium rerum adipisci facere optio ad.
+            </p>
+            <div class="product__actions">
+                <button>
+                    Buy now
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="product product--dark">
+        <div class="product__image">
+            <img src="./img_400.jpeg" alt="Product image">
+        </div>
+        <div class="product__details">
+            <h3>Clean drinking water</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sit eaque dolorum incidunt, omnis officia, dolore accusamus, nostrum harum vero unde reprehenderit eum modi accusantium rerum adipisci facere optio ad.
+            </p>
+            <div class="product__actions">
+                <button>
+                    Buy now
+                </button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
