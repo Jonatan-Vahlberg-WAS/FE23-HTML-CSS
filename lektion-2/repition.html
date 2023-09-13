@@ -80,7 +80,38 @@
         }
 
         #gallery-images img {
-        border-radius: 3px;
+            border-radius: 3px;
+        }
+
+        .image-wrapper {
+            position: relative;
+        }
+
+        .heart-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #c60909;
+            z-index: 1;
+        }
+
+        #negative-heart-icon {
+            background-color: #c60909;
+            color: white;
+            transform: translate(-75%, -50%);
+            z-index: 0;
+        }
+
+        #negative-heart-icon:hover {
+            z-index: 2;
         }
 
         #newsletter-button {
@@ -116,10 +147,18 @@
 <body>
     <header>
         <h1>Title of page</h1>
+        <span
+            style="position: fixed; font-size: xx-large; bottom: 8px; right: 8px"
+        >
+        💬
+    </span>
     </header>
     <main>
         <section id="main-article">
             <h2>Title of news article</h2>
+            <span style="position: sticky; top: 0; left: 0;">
+                🔗
+            </span>
             <p>
                 <small>
                     <em>Written by Jonatan Vahlberg</em>
@@ -183,10 +222,14 @@
             <h2>Gallery</h2>
             <p>Gallery of images</p>
             <div id="gallery-images">
-               <img
-                src="https://picsum.photos/75/75"
-                alt="Gallery image"
-                /> 
+                <div class="image-wrapper">
+                    <img
+                    src="https://picsum.photos/75/75"
+                    alt="Gallery image"
+                    />
+                    <span class="heart-icon" id="negative-heart-icon">♡</span> 
+                    <span class="heart-icon">♡</span> 
+                </div>
                 <img
                 src="https://picsum.photos/75/75"
                 alt="Gallery image"
@@ -223,7 +266,6 @@
             </button>
 
             <button class="circle" id="circle-with-bg">
-
             </button>
         </section>
     </main>
