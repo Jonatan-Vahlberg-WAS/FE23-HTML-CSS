@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Repition</title>
     <style>
+        
         html {
             font-family: sans-serif;
+        }
+        body {
+            margin: 0;
         }
         header {
             padding: 8px 16px 8px 16px;
@@ -21,7 +25,7 @@
             padding: 4px 16px;
         }
 
-        img {
+        #main-article img {
             border-width: 4px;
             border-color: white;
             border-style: solid;
@@ -62,6 +66,49 @@
 
         footer a {
             color: #353535
+        }
+
+        #gallery-images {
+            padding: 8px;
+            background-color: white;
+            margin-bottom: 16px;
+            display: flex;
+            gap: 8px;
+            justify-content: start;
+            flex-wrap: wrap;
+            border-radius: 0 10px 10px 0;
+        }
+
+        #gallery-images img {
+        border-radius: 3px;
+        }
+
+        #newsletter-button {
+            border: 0;
+            padding: 8px 16px;
+            border-radius: 100px;
+        }
+
+        .circle {
+            background-color: white;
+            height: 40px;
+            width: 40px;
+            font-size: 20px;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-top: 8px;
+        }
+
+        #circle-with-bg {
+            background: url("img_40.jpeg");
+            background:  
+                linear-gradient(#008ae780,#f14431aa),
+                url("https://fastly.picsum.photos/id/524/200/200.jpg?hmac=t6LNfKKZ41wUVh8ktcFHag3CGQDzovGpZquMO5cbH-o");
+            height: 200px;
+            width: 200px;
         }
 
     </style>
@@ -130,6 +177,54 @@
                     Comment
                 </button>
             </form>
+        </section>
+        <hr>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <p>Gallery of images</p>
+            <div id="gallery-images">
+               <img
+                src="https://picsum.photos/75/75"
+                alt="Gallery image"
+                /> 
+                <img
+                src="https://picsum.photos/75/75"
+                alt="Gallery image"
+                /> 
+                <img
+                src="https://picsum.photos/75/75"
+                alt="Gallery image"
+                /> 
+                <img
+                src="https://picsum.photos/75/75"
+                alt="Gallery image"
+                /> 
+                <img
+                src="https://picsum.photos/75/75"
+                alt="Gallery image"
+                /> 
+                <img
+                src="https://picsum.photos/75/75"
+                alt="Gallery image"
+                /> 
+                <img
+                src="https://picsum.photos/75/75"
+                alt="Gallery image"
+                />  <img
+                src="https://picsum.photos/75/75"
+                alt="Gallery image"
+                /> 
+            </div>
+            <button id="newsletter-button">
+                Subscribe to our newsletter
+            </button>
+            <button class="circle">
+                🏠
+            </button>
+
+            <button class="circle" id="circle-with-bg">
+
+            </button>
         </section>
     </main>
     <footer>
