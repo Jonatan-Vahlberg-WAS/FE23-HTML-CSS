@@ -126,6 +126,53 @@
             background-color: #737373;
         }
 
+        .tag {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tag::before {
+            content: "";
+            position: absolute;
+            inset: 0 20px 0 0;
+            width: 20px;
+            background-color: goldenrod;
+            z-index: -2;
+
+            animation: FAnim 1s alternate infinite forwards;
+
+        }
+
+        .tag::after {
+            content: "🏠";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 20px;
+            background-color: #32cd3220;
+            z-index: 1;
+            animation: BAnim 1s alternate infinite forwards;
+        }
+
+        @keyframes FAnim {
+            0% {
+                transform: translate(0%);
+            }
+            100% {
+                transform: translate(300%);
+            }
+        }
+
+        @keyframes BAnim {
+            0% {
+                transform: translate(-0%);
+            }
+            100% {
+                transform: translate(-300%);
+            }
+        }
+
         
     </style>
 </head>
@@ -177,6 +224,16 @@
             <li>Hello World</li>
             <li>Hello World</li>
         </ul>
+        <h3 class="tag">
+            Hello World
+        </h3>
+        <p class="tag">
+            Hello world
+        </p>
+
+        <p class="tag">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sint, fuga eos aliquam, consequuntur illum adipisci optio dolorum, suscipit ratione dolores aspernatur laboriosam. Dicta facere, animi temporibus fugiat facilis enim?
+        </p>
     </main>
 </body>
 </html>
