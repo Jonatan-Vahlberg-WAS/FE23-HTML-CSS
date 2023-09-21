@@ -17,6 +17,37 @@
         border-bottom: 2px solid #ffffff;
     }
 
+    .tag {
+        padding-left: 8px;
+        position: relative;
+    }
+
+    .tag::before {
+        content: "";
+        position: absolute;
+        width: 3px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        background-color: purple;
+    }
+
+    .tag[data-category="news"]::before {
+        background-color: #ffe600;
+    }
+
+    .tag[data-category="tech"]::before {
+        background-color: cyan;
+    }
+
+    .tag[data-category="culture"]::before {
+        background-color: limegreen
+    }
+
+    .tag[data-category="sports"]::before {
+        background-color: red;
+    }
+
     .tag:hover {
         text-decoration: underline;
         cursor: pointer;
