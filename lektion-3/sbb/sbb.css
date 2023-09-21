@@ -7,6 +7,26 @@
         background-color: #FDFDFE;
     }
 
+    .link a {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-family: sans-serif;
+    }
+
+    .link a:hover {
+        border-bottom: 2px solid #ffffff;
+    }
+
+    .tag:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    
+    .tag:not(.section-header) {
+        text-transform: uppercase;
+        font-family: sans-serif;
+    }
+
     .header {
         background-color: #4484CE;
         color: #FFF;
@@ -26,15 +46,31 @@
         gap: 8px;
     }
 
-    .header .container .nav-list .header-list-item a {
+    .header-list-item a,
+    .header-list-item a:link {
         padding: 16px 16px;
     }
 
-    .link a {
-        color: #FFFFFF;
-        text-decoration: none;
-        font-family: sans-serif;
+    .header-list-item:nth-child(2) a:hover {
+        border-color: yellow;
     }
+
+    .header-list-item:nth-child(3) a:hover {
+        border-color: red;
+    }
+
+    .header-list-item:nth-child(4) a:hover {
+        border-color: purple;
+    }
+
+    .header-list-item:nth-child(5) a:hover {
+        border-color: cyan;
+    }
+
+    .header-list-item:nth-child(6) a:hover {
+        border-color: limegreen
+    }
+
 
     h1 {
         font-family: sans-serif;
@@ -72,12 +108,18 @@
         flex-direction: column;
         justify-content: flex-end;
         position: relative;
+        cursor: pointer;
+    }
+
+    .featured-articles .article:hover .article-overlay {
+        background: linear-gradient(#00000000, #000000);
+
     }
 
     .featured-articles .article-overlay {
         position: absolute;
         inset: 0;
-        background: linear-gradient(#00000000, #000000);
+        background: linear-gradient(#0000001a, #000000);
         z-index: 1;
     }
 
@@ -95,6 +137,10 @@
         left: 50%;
 
         transform: translate(-50%, -50%);
+    }
+
+    .featured-articles .main-article-play-icon:hover {
+        color:#4e99ef;
     }
 
 
@@ -161,6 +207,24 @@
     .news-article-header {
         color: #212121;
         font-size: 20px;
+    }
+
+    .news-article-button {
+        background-color: transparent;
+        border: 0;
+        color:#4484CE;
+        cursor: pointer;
+    }
+
+    .news-article-button:hover {
+        color:#4e99ef
+    }
+    .news-article-button:disabled {
+        color:#bdd7f5;
+        cursor: not-allowed;
+    }
+    .news-article-button:disabled:hover{
+        color: #bdd7f5;
     }
 
     .article {
