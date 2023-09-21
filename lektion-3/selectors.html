@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector DOC</title>
+    <style>
+        /* ALL SELECTOR */
+        * {
+            margin: 0;
+        }
+        /* ELEMENT SELECTORS */
+        h1, h2, h3, h4, h5 ,h6 p {
+            margin: 1rem 0;
+        }
+
+        body {
+            width: 100vw;
+            overflow: hidden;
+        }
+
+        h1 {
+            background-color: rgb(82, 82, 247);
+            color: #fff;
+        }
+
+        /* CLASS SELECTOR */
+
+        .subtext {
+            font-style: italic;
+            font-size: 1.25rem;
+        }
+
+        /* ID SELECTOR */
+
+        #contact-form {
+            background-color: #ef6f8357;
+        }
+
+        /* ATRIBUTE SLECTOR */
+
+        #contact-form input[type="text"],
+        #contact-form input[as="select"] {
+            background-color: red;
+        }
+
+        /* NESTED SELECTOR */
+
+        .nested p {
+            color:rgb(82, 82, 247)
+        }
+
+        .nested > div {
+            padding: 16px;
+        }
+
+        .nested .nested-general p {
+            font-weight: bolder;
+        }
+
+        .nested .nested-specified > p {
+            font-style: italic;
+        }
+
+        /* Compound selectors */
+
+        .nested .nested-specified > p,
+        .nested .nested-specified > .nested-even-more-specified > p {
+            text-transform: uppercase;
+        }
+
+        .image-wrapper > img {
+            border-radius: 100px;
+        }
+
+        /* SIBLING SELECTOR */
+
+        .image-wrapper > img + p {
+            font-style: italic;
+        }
+
+
+        .hero {
+            padding: 24px;
+            background-color: bisque;
+        }
+
+        .hero > div {
+            padding: 16px;
+            background-color: yellowgreen;
+        }
+
+        .hero > div:nth-child(4) {
+            background-color: aqua;
+            border-radius: 20px;
+        }
+        .hero > div:nth-child(4) {
+            border-radius: 5px !important;
+        }
+
+        .hero > div.red {
+            background-color: red;
+        }
+
+        .hero > div:nth-child(4) {
+            background-color: aqua;
+            border-radius: 20px;
+        }
+
+
+        .hero > div.red#main {
+            border: 3px solid #000;
+        }
+
+        #main {
+            border: 3px solid #a23333;
+
+        }
+
+     
+
+
+    </style>
+</head>
+<body>
+    <h1>Hello world</h1>
+    <p class="subtext">Text</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, ipsa expedita voluptatem consequuntur exercitationem quaerat modi, culpa nobis asperiores ducimus recusandae sunt nesciunt blanditiis esse deleniti fugiat soluta? Unde, autem.</p>
+
+    <form id="contact-form">
+        <label>
+            Text
+        </label>
+        <input type="text"/>
+        <label>
+            Number
+        </label>
+        <input type="number" />
+
+        <input as="select"/>
+    </form>
+
+    <div class="nested">
+        <p>
+            Outer
+        </p>
+        <div class="nested-general">
+            <p>
+                General
+            </p>
+        </div>
+        <div class="nested-specified">
+            <p>Specified</p>
+            <div class="nested-even-more-specified">
+                <p>Even more specified</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-wrapper">
+        <img src="https://picsum.photos/75/75"/>
+        <p>Description of image</p>
+    </div>
+
+    <div class="hero">
+        <div></div>
+        <div class="red"></div>
+        <div class="red" id="main"></div>
+        <div class="red">
+            Most specific
+        </div>
+    </div>
+</body>
+</html>
