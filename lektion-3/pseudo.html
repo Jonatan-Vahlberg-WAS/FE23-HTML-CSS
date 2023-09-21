@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo classes & Elements</title>
+    <style>
+        nav {
+            background-color: cadetblue;
+            padding: 16px;
+        }
+        .nav-list {
+            list-style: none;
+            display: flex;
+            gap: 16px;
+            padding: 0;
+        }
+        .nav-list > li > a,
+        .nav-list > li > a:link {
+            color: white;
+            text-decoration: none;
+            padding: 8px;
+            transition: all 0.4s;
+        }
+
+        /* Pseudo Selectors */
+
+        .nav-list > li > a:hover,
+        .nav-list > li:first-child > a {
+            background-color: white;
+            color:cadetblue;
+        }
+
+        .newsletter {
+            background-color: orange;
+            padding: 24px;
+            display: flex;
+            gap: 24px;
+        }
+
+        .newsletter input[type="email"] {
+            padding: 8px 12px;
+            border: 0;
+            border-radius: 2px;
+            margin-right: 8px;
+        }
+
+        .newsletter input:focus {
+            transform: rotate(-12deg);
+        }
+
+        .newsletter button {
+            padding: 8px 24px;
+            border: 0;
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            border-radius: 100px;
+            cursor: pointer;
+            transition: all 0.4s;
+        }
+
+        .newsletter button:hover {
+            background-color: white;
+            color: orange;
+            transform: translateY(2px);
+        }
+
+        .newsletter button:active {
+            transform: translateY(-2px);
+        }
+
+        .register-form {
+            background-color: #444444;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .register-form input {
+            border: 0;
+            outline: none;
+            padding: 8px 12px;
+            border-bottom: 2px solid white;
+
+        }
+
+        .register-form input:focus {
+            border-bottom: 2px solid orange;
+            background-color: transparent;
+            color: orange;
+        }
+
+        .register-form input:focus::placeholder {
+            color: rgb(255, 196, 88);
+        }
+        a.read-more,
+        a.read-more:link {
+            color: rgb(230, 150, 3);
+            text-decoration: none;
+        }
+
+        a.read-more:hover {
+            text-decoration: underline;
+        }
+
+        a.read-more:visited {
+            color: rgb(137, 89, 0);
+        }
+
+        .list2 {
+            background-color: #444444;
+            color:rgb(230, 150, 3);
+            list-style: none;
+            padding: 24px;
+        }
+
+        .list2 > li:nth-child(2) {
+            background-color: rgb(230, 150, 3);
+            color: white;
+        }
+
+        .list2 > li:nth-child(odd) {
+            background-color: #737373;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <main>
+        <nav>
+            <ul class="nav-list">
+                <li>
+                    <a class="active-link" href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="index.html">About</a>
+                </li>
+
+                <li>
+                    <a href="index.html">Work</a>
+                </li>
+
+                <li>
+                    <a href="index.html">TOS</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="newsletter">
+            <div>
+                <input type="email"/>
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <form class="register-form"> 
+            <div>
+                <input type="text" placeholder="Name"/>
+            </div>
+            <div>
+                <input type="tel" placeholder="Phone"/>
+            </div>
+        </form>
+
+        <h3>lorem ipsum</h3>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita quasi ipsam quisquam accusamus, suscipit totam praesentium nostrum deleniti doloremque error obcaecati, voluptas aspernatur dolorem a nisi est, laboriosam sunt eveniet!&nbsp;<a class="read-more" target="_blank" href="https://google265.se">Read more</a>
+        </p>
+        <ul class="list2">
+            <li>Hello World</li>
+            <li>Hello World</li>
+            <li>Hello World</li>
+            <li>Hello World</li>
+            <li>Hello World</li>
+            <li>Hello World</li>
+        </ul>
+    </main>
+</body>
+</html>
