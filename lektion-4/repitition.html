@@ -4,8 +4,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram clone</title>
+    <style>
+        * {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            box-sizing: border-box;
+        }
+        #sidebar-menu {
+            width: 250px;
+            position: fixed;
+            inset-block: 0;
+            inset-inline-start: 0;
+            border-inline-end: 1px #94949473 solid;
+        }
+
+        .title {
+            padding: 24px 24px 32px 8px;
+        }
+
+        .menu__list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px
+        } 
+
+        .menu__list-item a,
+        .menu__list-item a:link {
+            padding: 16px 8px;
+            display: flex;
+            align-items: center;
+            color: #000;
+            text-decoration: none;
+            font-size: 1.25rem;
+        }
+
+        .menu__list-item a:hover {
+            color: #484848;
+        }
+
+        .menu__list-item-icon {
+            margin-right: 16px;
+            font-size: 2rem;
+            position: relative;
+        }
+
+        .menu__list-item-icon--notification::after {
+            content: "";
+            position: absolute;
+            top: 4px;
+            right: 0;
+            width: 8px;
+            aspect-ratio: 1;
+            border-radius: 4px;
+            background-color: #cf1800   ;
+
+        }
+
+        #main-content {
+            margin-left: 250px;
+            background-color: #d3d2d2b8;
+            width: calc(100vw - 250px);
+            min-height: 100vh;
+            overflow-y: auto;
+            
+        }
+
+        .posts {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 16px;
+            min-height: 100%;
+            gap: 16px;
+        }
+
+        .post {
+            background-color: white;
+            border: #484848 solid 1px;
+            width:  min(400px, 50%);
+            height: 600px;
+            border-radius: 4px;
+
+        }
+    </style>
 </head>
 <body>
-    
+    <aside id="sidebar-menu">
+        <h1 class="title">Instagram</h1>
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__list-item menu__list-item--active">
+                    <a href="./repitition.html">
+                        <span class="menu__list-item-icon">
+                            ❤ 
+                        </span>
+                        Home
+                    </a>
+                </li>
+                <li class="menu__list-item">
+                    <a href="./repitition.html">
+                        <span class="menu__list-item-icon">
+                            ❤ 
+                        </span>
+                        Search
+                    </a>
+                </li>
+                <li class="menu__list-item">
+                    <a href="./repitition.html">
+                        <span class="menu__list-item-icon menu__list-item-icon--notification">
+                            ❤ 
+                        </span>
+                        Explore
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main id="main-content">
+        <section class="posts">
+            <div class="post">
+                HELLO WORLD
+            </div>
+
+            <div class="post">
+                HELLO WORLD
+            </div>
+            <div class="post">
+                HELLO WORLD
+            </div>
+        </section>
+    </main>
 </body>
 </html>
