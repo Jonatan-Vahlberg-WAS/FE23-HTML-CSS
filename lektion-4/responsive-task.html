@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Min responsiva sida</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Välkommen till min responsiva sida!</h1>
+    <p>Denna sida ändrar färg beroende på skärmstorleken.</p>
+		<div class="details"></div>
+<script>
+    const detailsDiv = document.querySelector('.details');
+    const screenDetails = `
+        Screen Width: ${screen.width},
+        Screen Height: ${screen.height},
+        Screen Color Depth: ${screen.colorDepth},
+        Screen Pixel Depth: ${screen.pixelDepth}
+    `;
+
+    detailsDiv.innerText = screenDetails;
+</script>
+</body>
+</html>
