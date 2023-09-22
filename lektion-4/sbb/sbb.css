@@ -90,6 +90,24 @@
         display: none;
     }
 
+    .nav-list-fold-out-menu {
+        height: 0;
+        visibility: 0;
+        opacity: 0;
+        transition: height 0.6s;
+        padding-bottom: 8px;
+        border-top: #bdd7f5 1px solid;
+    }
+
+    .nav-list-fold-out-menu .nav-list-mobile {
+        list-style: none;
+        text-align: center;
+        gap: 8px;
+        flex-direction: column;
+        padding: 0;
+    }
+
+
     .header-list-item a,
     .header-list-item a:link {
         padding: 16px 16px;
@@ -304,7 +322,7 @@
 
 
         .header-search-mobile {
-            display: initial;
+            display: flex;
         }
 
         .header-search-desktop {
@@ -333,7 +351,13 @@
         }
 
         .nav-list-mobile {
-            display: initial;
+            display: flex;
+        }
+
+        .nav-list-fold-out-menu--open {
+            height: initial;
+            visibility: 1;
+            opacity: 1;
         }
 
         .header .container .nav-list.nav-list-desktop {
