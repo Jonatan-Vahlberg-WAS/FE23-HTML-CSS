@@ -244,8 +244,9 @@
 
     .news-article {
         height: 350px;
-        width: 300px;
-        /* width 300px or auto */
+        min-width: 300px;
+        max-width: 400px;
+        flex: 1;
     }
 
     .news-article img {
