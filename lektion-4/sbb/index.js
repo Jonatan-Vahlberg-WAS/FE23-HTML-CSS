@@ -6,7 +6,6 @@ const onClick = (event) => {
     event.target.classList.toggle("nav-list-menu--open")
     headerFoldOutMenu.classList.toggle("nav-list-fold-out-menu--open")
     //set text to "x" if menu is open, otherwise set it to "☰"
-    console.log(event.target, event.target.innerText)
     if (event.target.classList.contains("nav-list-menu--open")) {
         event.target.innerText = "x"
     }
