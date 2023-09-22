@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive 1</title>
+    <style>
+
+        body {
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: aqua;
+            height: 50px;
+        }
+
+
+        main {
+            min-height: calc(100vh - 100px);
+            background-color: #4e784e;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        main section {
+            width: 33.33%;
+            padding: 16px;
+            box-sizing: border-box;
+        }
+
+        main section:nth-child(1) {
+            background-color: yellow;
+        }
+
+        main section:nth-child(2) {
+            background-color: red;
+        }
+
+        main section:nth-child(3) {
+            background-color: blue;
+            color: white;
+        }
+
+        footer {
+            background-color:darkgray;
+            height: 50px;
+        }
+
+        @media only screen and (max-width: 850px) {
+
+            main  {
+                flex-wrap: wrap;
+            }
+            main section {
+                width: 50%;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+
+            main section {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, debitis illum nemo atque dolorem corporis fugiat eveniet aperiam autem nam ipsam! Molestias porro, dignissimos voluptas quaerat autem eligendi est laudantium.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, debitis illum nemo atque dolorem corporis fugiat eveniet aperiam autem nam ipsam! Molestias porro, dignissimos voluptas quaerat autem eligendi est laudantium.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, debitis illum nemo atque dolorem corporis fugiat eveniet aperiam autem nam ipsam! Molestias porro, dignissimos voluptas quaerat autem eligendi est laudantium.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, debitis illum nemo atque dolorem corporis fugiat eveniet aperiam autem nam ipsam! Molestias porro, dignissimos voluptas quaerat autem eligendi est laudantium.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, debitis illum nemo atque dolorem corporis fugiat eveniet aperiam autem nam ipsam! Molestias porro, dignissimos voluptas quaerat autem eligendi est laudantium.
+        </section>
+        <section>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, debitis illum nemo atque dolorem corporis fugiat eveniet aperiam autem nam ipsam! Molestias porro, dignissimos voluptas quaerat autem eligendi est laudantium.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, debitis illum nemo atque dolorem corporis fugiat eveniet aperiam autem nam ipsam! Molestias porro, dignissimos voluptas quaerat autem eligendi est laudantium.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, debitis illum nemo atque dolorem corporis fugiat eveniet aperiam autem nam ipsam! Molestias porro, dignissimos voluptas quaerat autem eligendi est laudantium.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, debitis illum nemo atque dolorem corporis fugiat eveniet aperiam autem nam ipsam! Molestias porro, dignissimos voluptas quaerat autem eligendi est laudantium.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, debitis illum nemo atque dolorem corporis fugiat eveniet aperiam autem nam ipsam! Molestias porro, dignissimos voluptas quaerat autem eligendi est laudantium.
+        </section>
+        <section>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, debitis illum nemo atque dolorem corporis fugiat eveniet aperiam autem nam ipsam! Molestias porro, dignissimos voluptas quaerat autem eligendi est laudantium.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, debitis illum nemo atque dolorem corporis fugiat eveniet aperiam autem nam ipsam! Molestias porro, dignissimos voluptas quaerat autem eligendi est laudantium.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, debitis illum nemo atque dolorem corporis fugiat eveniet aperiam autem nam ipsam! Molestias porro, dignissimos voluptas quaerat autem eligendi est laudantium.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, debitis illum nemo atque dolorem corporis fugiat eveniet aperiam autem nam ipsam! Molestias porro, dignissimos voluptas quaerat autem eligendi est laudantium.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, debitis illum nemo atque dolorem corporis fugiat eveniet aperiam autem nam ipsam! Molestias porro, dignissimos voluptas quaerat autem eligendi est laudantium.
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
