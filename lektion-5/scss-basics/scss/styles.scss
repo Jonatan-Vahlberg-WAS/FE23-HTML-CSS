@@ -1,5 +1,6 @@
 
 @import "variables";
+@import "mixins";
 
 body {
     background-color: #747474;
@@ -11,9 +12,15 @@ body {
     gap: 16px;
 }
 
+h1 {
+    @include card;
+}
+
 .project {
-    background-color: $background-color;
-    padding: 16px;
+    @include card;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
 
     &__title {
         color: #8cb11d;
@@ -41,9 +48,7 @@ body {
     }
 
     &--dark {
-        background-color: $background-color--dark;
-        color: #fff;
-
+        @include card($bg: $background-color--dark, $fg: #fff);
         & .project__cta {
             background-color: $primary-dark;
 
@@ -51,5 +56,9 @@ body {
                 background-color: $primary-dark-active;
             }
         }
+    }
+
+    @media (max-width: $breakpoint-sm) {
+        flex-direction: column;
     }
 }

@@ -8,9 +8,23 @@ body {
   gap: 16px;
 }
 
+h1 {
+  background-color: #fdfdfd;
+  color: #000;
+  padding: 16px;
+  border-radius: 4px;
+  box-shadow: 0 0 1px rgba(253, 253, 253, 0.25);
+}
+
 .project {
   background-color: #fdfdfd;
+  color: #000;
   padding: 16px;
+  border-radius: 4px;
+  box-shadow: 0 0 1px rgba(253, 253, 253, 0.25);
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
 }
 .project__title {
   color: #8cb11d;
@@ -34,12 +48,20 @@ body {
 .project--dark {
   background-color: #222222;
   color: #fff;
+  padding: 16px;
+  border-radius: 4px;
+  box-shadow: 0 0 1px rgba(34, 34, 34, 0.25);
 }
 .project--dark .project__cta {
   background-color: #ffa500;
 }
 .project--dark .project__cta:hover {
   background-color: #ff7700;
+}
+@media (max-width: 768px) {
+  .project {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,14 @@
+@import "variables";
+
+
+/// Card wrapper
+/// @param {Color} $bg - Background color
+/// @param {Color} $fg - Foreground color
+@mixin card($bg: $background-color, $fg:#000) {
+    background-color: $bg;
+    color: $fg;
+    padding: 16px;
+    border-radius: 4px;
+    box-shadow: 0 0 1px rgba($bg, .25);
+
+}

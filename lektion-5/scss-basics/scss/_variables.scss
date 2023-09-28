@@ -6,3 +6,11 @@ $primary-dark: #ffa500;
 
 $primary-active: #710071;
 $primary-dark-active: #ff7700;
+
+$breakpoints: (
+    'sm': 768px,
+    'md': 992px,
+    'lg': 1199px
+)!default;
+
+$breakpoint-sm: 768px;
