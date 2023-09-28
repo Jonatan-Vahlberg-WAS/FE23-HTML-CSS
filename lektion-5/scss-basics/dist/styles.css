@@ -1,0 +1,45 @@
+body {
+  background-color: #747474;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.project {
+  background-color: #fdfdfd;
+  padding: 16px;
+}
+.project__title {
+  color: #8cb11d;
+}
+.project__description {
+  font-style: italic;
+}
+.project__cta {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  border: none;
+  background-color: #990099;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+.project__cta:hover {
+  background-color: #710071;
+}
+.project--dark {
+  background-color: #222222;
+  color: #fff;
+}
+.project--dark .project__cta {
+  background-color: #ffa500;
+}
+.project--dark .project__cta:hover {
+  background-color: #ff7700;
+}
+
+/*# sourceMappingURL=styles.css.map */

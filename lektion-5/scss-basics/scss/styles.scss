@@ -1,0 +1,55 @@
+
+@import "variables";
+
+body {
+    background-color: #747474;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.project {
+    background-color: $background-color;
+    padding: 16px;
+
+    &__title {
+        color: #8cb11d;
+    }
+
+    &__description {
+        font-style: italic;
+    }
+
+    &__cta {
+        display: block;
+        width: 100%;
+        padding: 8px 16px;
+        border: none;
+
+        background-color: $primary;
+        color: white;
+        font-weight: 700;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $primary-active;
+
+        }
+    }
+
+    &--dark {
+        background-color: $background-color--dark;
+        color: #fff;
+
+        & .project__cta {
+            background-color: $primary-dark;
+
+            &:hover {
+                background-color: $primary-dark-active;
+            }
+        }
+    }
+}
