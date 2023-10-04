@@ -1,0 +1,70 @@
+### Bad practices
+
+1. **Nyckelordstoppning**: Att upprepa nyckelord onaturligt och överdrivet genom hela innehållet, metataggar och URL:er. Till exempel:
+   - "Köp billiga skor, prisvärda skor, rabattskor, lågprisskor, budgetskor och prisvärda skor. Våra billiga skor är de bästa skorna för priset."
+
+2. **Dold text**: Att placera text som är osynlig för användare men innehåller nyckelord i samma färg som bakgrunden för att manipulera rankningar.
+
+3. **Cloaking**: Att visa olika innehåll för sökmotorer och användare. Till exempel, att visa innehåll om "hälsosam kost" för sökmotorer medan användare ser "kasino-spel".
+
+4. **Länkfarmar**: Att skapa ett nätverk av lågkvalitativa webbplatser eller sidor enbart för att länka till en målsida för att konstgjort öka dess auktoritet.
+
+5. **Dörrsidor**: Att skapa många sidor, var och en som riktar sig mot ett specifikt nyckelord, ofta med tunnt eller duplicerat innehåll, i ett försök att manipulera rankningar.
+
+
+### Good practices
+
+1. **Högkvalitativt Innehåll:** Innehållet är central inom SEO. Skapa informativt, värdefullt och unikt innehåll som adresserar målgruppens behov och intressen. Högkvalitativt innehåll tenderar att ranka bättre i sökresultaten.
+
+2. **Optimering av Nyckelord:** Använd relevanta nyckelord naturligt genom ditt innehåll. Inkludera målnyckelord i rubriker, underrubriker och i brödtexten. Undvik dock överdriven användning av nyckelord, vilket kan ha en negativ inverkan.
+
+3. **Innehållsstruktur:** Organisera ditt innehåll med tydliga rubriker (H1, H2, H3, osv.) och underrubriker för att skapa en logisk hierarki. Det gör det lättare för både användare och sökmotorer att förstå innehållet.
+
+4. **Intern Länkning:** Inkludera interna länkar till andra relevanta sidor på din webbplats. Detta hjälper användare att navigera och förbättrar SEO genom att fördela länkkraften genom ditt innehåll.
+
+5. **Extern Länkning:** Referera till pålitliga källor genom att inkludera utgående länkar till auktoritativa webbplatser när det adderar värde till ditt innehåll. Det kan förbättra din innehålls trovärdighet.
+
+6. **Bilder och Multimedia:** Använd högkvalitativa bilder, videor och andra multimediaelement för att engagera användare. Optimera bilder genom att använda beskrivande alternativtext och komprimera dem för snabbare laddningstider.
+
+7. **Mobilanpassad Design:** Se till att din webbplats är responsiv och mobilvänlig. Google ger företräde åt mobilvänliga webbplatser i sina sökresultat.
+
+8. **Sidan Laddningshastighet:** Snabbare laddningssidor tenderar att ranka bättre. Komprimera bilder, minimera kod och använd ett innehållsleveransnätverk (CDN) för att förbättra sidhastigheten.
+
+9. **Användarupplevelse (UX):** Prioritera användarupplevelsen genom att skapa lättanvända sidor med tydliga handlingsuppmaningar (CTA) och en logisk flöde av innehållet. En positiv UX kan indirekt gynna din SEO.
+
+10. **Engagemangsindikatorer:** Uppmuntra användarinteraktion med ditt innehåll genom kommentarer, delningar i sociala medier och längre tid spenderad på dina sidor. Google kan använda dessa signaler som rankingfaktorer.
+
+11. **Schema Markup:** Implementera schema markup för att tillhandahålla strukturerad data som hjälper sökmotorer att förstå sammanhanget av ditt innehåll. Det kan leda till rika utdrag i sökresultaten.
+
+12. **Delning i Sociala Medier:** Gör det enkelt för användare att dela ditt innehåll på sociala medieplattformar. Sociala signaler, som gillanden, delningar och kommentarer, kan indirekt påverka din SEO.
+
+
+### Images good practices
+
+**Grundläggande bildtagg:**
+- Detta är en grundläggande bildtagg.
+- Den inkluderar en beskrivande `alt`-text som förklarar bildens innehåll eller syfte.
+
+**Bild med bredd- och höjdattribut:**
+- Denna bildtagg inkluderar attributen `width` och `height`.
+- Dessa attribut specificerar bildens dimensioner och hjälper webbläsare att fördela utrymme samt förbättrar användarupplevelsen.
+
+**Responsiv bild med `srcset` och `sizes`:**
+- I detta exempel används attributen `srcset` för att tillhandahålla flera bildkällor med olika upplösningar eller storlekar.
+- Attributet `sizes` definierar hur bilden ska visas baserat på fönsterstorlek, vilket säkerställer responsivitet.
+
+**Lat laddning av bild (HTML5-attribut):**
+- Attributet `loading="lazy"` läggs till för att aktivera nativ lat laddning i webbläsaren.
+- Det fördröjer bildens laddning tills den blir synlig i användarens vy, vilket förbättrar sidans laddningstider och användarupplevelse.
+
+**Bild med bildtext/beskrivning (Figcaption):**
+- I detta exempel omsluts bilden av en `<figure>`-element.
+- Ett `<figcaption>`-element läggs till för att ge en bildtext eller beskrivning av bilden, vilket förbättrar tillgängligheten och användarförståelsen.
+
+**Bild med schemamarkering (strukturerad data):**
+- Schemamarkering används med attributen (`itemprop`, `itemscope`, `itemtype`) för att förse bilden med strukturerad data.
+- Detta hjälper sökmotorer att förstå bildens sammanhang och kan leda till rika utdrag i sökresultaten.
+
+**Dekorativa bilder med tom `alt`-text:**
+- För ren dekorativa bilder som inte förmedlar innehåll eller mening används en tom `alt`-text.
+- Attributet `role="presentation"` indikerar att bilden är dekorativ och bör ignoreras av skärmläsare, vilket bibehåller tillgängligheten.
