@@ -20,6 +20,7 @@ const switchTheme = (e) => {
         body.classList = `theme--${newTheme}`
         //set the text of the button to the new theme
         e.target.textContent = newTheme
+        document.cookie = `theme=${newTheme}`
     }
 }
 
@@ -33,7 +34,12 @@ colorSwitcher.addEventListener("click", switchTheme)
 body.appendChild(colorSwitcher)
 
 onload = () => {
-    body.classList = `theme--${themes[0]}`
-    colorSwitcher.textContent = themes[0]
+    const cookie = document.cookie
+    const cookieTheme = themes.find((theme) => {
+        return cookie.includes(theme)
+    })
+    const theme = cookieTheme || themes[0]
+    body.classList = `theme--${theme}`
+    colorSwitcher.textContent = theme
 }
 
