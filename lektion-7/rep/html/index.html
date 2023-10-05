@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Repition</title>
+    <style>
+        article {
+            height: 100vh;
+        }
+
+        #article-main {
+            background-color: chocolate;
+        }
+
+        #article-sub {
+            background-color: rgb(193, 167, 218);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            heading
+        </h1>
+        <nav></nav>
+    </header>
+    <main>
+    <p>
+        Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipisicing elit. Nemo deleniti pariatur, recusandae animi eaque velit voluptatum reprehenderit veniam distinctio aspernatur. 
+    </p>
+        <article id="article-main" class="article">
+            <section>
+                <p><strong>Jonatan Vahlberg</strong></p>
+                <a href="tel:+4678234516">
+                    Ring mig
+                </a>
+                <a href="mailto:jonatan.vahlberg@kyh.dummy.mail">
+                    Mejla mig
+                </a>
+            </section>
+            <section>
+                <div></div>
+            </section>
+        </article>
+        <article class="article" id="article-sub">
+            <form id="login-form">
+                <label for="email">
+                    Enter email
+                </label><br>
+                <input type="email" name="email" id="email" placeholder="test@mail.com" required="true"> <br><br>
+
+                <label for="email">
+                    Enter password
+                </label><br>
+                <input type="password" name="password" required="true" placeholder="Password"><br><br>
+                <label>
+                    <input type="checkbox">
+                    Remeber me?
+                </label>
+                <br><br>
+                <button type="submit">
+                    Submit
+                </button>
+            </form>
+            <br><br><br><br>
+            <form>
+                <fieldset>
+                    <legend>Register new user</legend>
+                    <label for="name">
+                        Enter name
+                    </label><br>
+                    <input type="text" maxlength="30" placeholder="Enter full name"><br><br>
+                    <label for="name">
+                        Enter age
+                    </label><br>
+                    <input type="number" max="120" min="1">
+                    <label for="date-of-birth">
+                        Date of birth
+                    </label>
+                    <input type="date" min="2023-10-05" max="2023-10-06"><br><br>
+                    <label for="date-of-birth">
+                        Time of birth
+                    </label>
+                    <input type="time" min="10:00" max="20:00"><br><br>
+                    <label for="date-of-birth">
+                        Choose starsign
+                    </label>
+                    <select>
+                        <option value="1">
+                            Leo
+                        </option>
+                        <option value="2">
+                            Gemini
+                        </option>
+                    </select><br><br>
+                    <label for="date-of-birth">
+                        Write a bit about yourself
+                    </label>
+                    <textarea
+                        cols="80"
+                        rows="5"
+                        maxlength="10"
+                    ></textarea><br><br>
+
+                    <label>
+                        Upload profile image
+                    </label>
+                    <input type="file">
+
+                    <button type="submit">
+                        Create user
+                    </button>
+                </fieldset>
+            </form>
+        </article>
+    </main>
+    <aside></aside>
+    <footer>
+        <a href="#article-main">
+            Go to main content
+        </a>
+        <a href="#article-sub">
+            Go to sub content
+        </a>
+    </footer>
+</body>
+</html>
