@@ -3,28 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Theme switching</title>
+    <title>Theme switching & Accessability</title>
     <style>
-        
+        body,
+        body.theme--light {
+            --background-color: white;
+            --text-color: black;
+            --primary-color: #3898ff;
+
+            background-color: var(--background-color);
+            color: var(--text-color);
+
+        }
         body.theme--dark {
-            background-color: black;
-            color: white;
+            --background-color: #131313;
+            --text-color: white;
+            --primary-color: #ff9800;
         }
         .color-switcher {
             position: fixed;
             top: 16px;
             right: 16px;
             padding: 16px;
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
+            /* Lighten or darken */
+            background-color: var(--primary-color);
+            color: var(--text-color);
             border: none;
             width: 100px;
             border-radius: 100px;
+            text-transform: capitalize;
+            font-weight: 700;
+        }
+
+        h1 {
+            color: var(--primary-color);
         }
     </style>
 </head>
 <body>
-    <p>Hello world</p>
+    <header>
+        <h1>Accessability</h1>
+        <nav>
+            <ul>
+                <li><a href="./task.html" title="Home">Home</a></li>
+                <li><a href="./task.html" title="About us">About us</a></li>
+                <li><a href="./task.html" title="Work with us">Work with us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about-us">
+            <h2>About us</h2>
+            <img src="./image.jpg" alt="A image of the founders favourite drink" width="600" height="400">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, nam nobis reprehenderit similique quia id numquam amet harum natus quo praesentium molestiae voluptas repudiandae adipisci hic non. Rem, ea quibusdam!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, nam nobis reprehenderit similique quia id numquam amet harum natus quo praesentium molestiae voluptas repudiandae adipisci hic non. Rem, ea quibusdam!</p>
+            <a href="https://google.se" target="_blank">
+                Read more about our founder
+            </a>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Quarter</th>
+                        <th>Earnings</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Q1 2023</td>
+                        <td>5 000 000 kr</td>
+                    </tr>
+                    <tr>
+                        <td>Q2 2023</td>
+                        <td>4 030 020 kr</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="work-with-us">
+            <h2>Work with us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, nam nobis reprehenderit similique quia id numquam amet harum natus quo praesentium molestiae voluptas repudiandae adipisci hic non. Rem, ea quibusdam!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, nam nobis reprehenderit similique quia id numquam amet harum natus quo praesentium molestiae voluptas repudiandae adipisci hic non. Rem, ea quibusdam!</p>
+            <form>
+                <div>
+                    <label>
+                        Name
+                    </label><br>
+                    <input type="text" placeholder="Enter name..." required="true">
+                </div>
+                <div>
+                    <label>
+                        Email
+                    </label><br>
+                    <input type="email" placeholder="Enter email..." required="true">
+                </div>
+                <div>
+                    <label>
+                        Job title
+                    </label><br>
+                    <select required="true">
+                        <option value="">
+                            Choose title
+                        </option>
+                        <option value="1">
+                            Developer
+                        </option>
+                        <option value="2">
+                            HR
+                        </option>
+                    </select>   
+                </div>
+                <div>
+                    <label>
+                        Write about yourself
+                    </label><br>
+                    <textarea placeholder="Enter name..." required="true" cols="40" rows="5">
+                    </textarea>
+                </div>
+                <button>
+                    Send request
+                </button>
+            </form>
+        </section>
+    </main>
     <script src="./index.js"></script>
 </body>
 </html>

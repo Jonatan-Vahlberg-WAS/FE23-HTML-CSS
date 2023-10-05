@@ -26,8 +26,8 @@ const switchTheme = (e) => {
 
 const colorSwitcher = document.createElement("button")
 colorSwitcher.classList = "color-switcher"
+colorSwitcher.setAttribute("title", "Change theme")
 colorSwitcher.addEventListener("click", switchTheme)
-
 
 
 
