@@ -1,0 +1,127 @@
+.text.sm {
+  font-size: 12pt;
+}
+.text.md-bold {
+  font-size: 14pt;
+  font-weight: bold;
+}
+.text.lg {
+  font-size: 18pt;
+}
+.text .wolfpackred {
+  color: #cc0000;
+}
+.text .black {
+  color: #000;
+}
+.text .white {
+  color: #fff;
+}
+.text .gray10 {
+  color: #f2f2f2;
+}
+.text .gray25 {
+  color: #ccc;
+}
+.text .gray60 {
+  color: #666;
+}
+.text .gray90 {
+  color: #333;
+}
+.text .reynoldsred {
+  color: #990000;
+}
+.text .pyromanflame {
+  color: #d14905;
+}
+.text .huntyellow {
+  color: #fdd726;
+}
+.text .genomicgreen {
+  color: #7d8c1f;
+}
+.text .innovationblue {
+  color: #427e93;
+}
+.text .bioindigo {
+  color: #4156a1;
+}
+
+.color-block.wolfpackred {
+  background-color: #cc0000;
+}
+.color-block.black {
+  background-color: #000;
+}
+.color-block.white {
+  background-color: #fff;
+}
+.color-block.gray10 {
+  background-color: #f2f2f2;
+}
+.color-block.gray25 {
+  background-color: #ccc;
+}
+.color-block.gray60 {
+  background-color: #666;
+}
+.color-block.gray90 {
+  background-color: #333;
+}
+.color-block.reynoldsred {
+  background-color: #990000;
+}
+.color-block.pyromanflame {
+  background-color: #d14905;
+}
+.color-block.huntyellow {
+  background-color: #fdd726;
+}
+.color-block.genomicgreen {
+  background-color: #7d8c1f;
+}
+.color-block.innovationblue {
+  background-color: #427e93;
+}
+.color-block.bioindigo {
+  background-color: #4156a1;
+}
+
+.color-block {
+  height: auto;
+  width: 100%;
+  margin: 0 auto 2em auto;
+  padding: 1.5em;
+  float: left;
+}
+.color-block.white {
+  outline: solid 1px #ccc;
+}
+
+
+.neon-cyan {
+    background-color: #00ffff;
+}
+.neon-pink {
+    color: #ff00ff;
+}
+
+.dark-bg {
+    background-color: #4b1223;
+}
+
+.dark-text {
+    color: #4b4212;
+}
+
+.vibrating-green {
+    background-color: #5fa41c;
+}
+
+.vibrating-pink {
+    color: #ff3ac6;
+}
+.vibrating-red {
+    color: #ff1a00;
+}
