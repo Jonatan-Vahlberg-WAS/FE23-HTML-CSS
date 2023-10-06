@@ -11,31 +11,44 @@
         body,
         body.theme--light {
             --background-color: white;
+            --background-color-secondary: #e7e7e7;
+            --background-color-ternary: #d4d4d4;
             --text-color: black;
-            --primary-color: #3898ff;
+            --text-color-placeholder: #292929;
+            --primary-color: #2d7dd2;
+            --primary-color-active: #1f5690;
 
             background-color: var(--background-color);
             color: var(--text-color);
 
         }
         body.theme--dark {
-            --background-color: #131313;
+            --background-color: #222222;
+            --background-color-secondary: #323232;
+            --background-color-ternary: #292929;
             --text-color: white;
+            --text-color-placeholder: #c1c1c1;
             --primary-color: #ff9800;
+            --primary-color-active: #ce7c00;
+
         }
+
+        button {
+            padding: 16px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border: none;
+            text-transform: capitalize;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
         .color-switcher {
             position: fixed;
             top: 16px;
             right: 16px;
-            padding: 16px;
-            /* Lighten or darken */
-            background-color: var(--primary-color);
-            color: var(--text-color);
-            border: none;
             width: 100px;
             border-radius: 100px;
-            text-transform: capitalize;
-            font-weight: 700;
         }
 
         h1 {
@@ -45,6 +58,65 @@
         ul {
             padding: 0;
         }
+        section {
+            padding: 16px;
+        }
+        section:nth-child(odd) {
+            background-color: var(--background-color-secondary);
+        }
+        section:nth-child(even) {
+            background-color: var(--background-color-ternary);
+        }
+
+        a,
+        a:link {
+            color: var(--primary-color);
+        }
+
+        a:hover {
+            color: var(--primary-color-active);
+        }
+
+        button:hover {
+            background-color: var(--primary-color-active);
+        }
+
+        input,
+        select,
+        textarea {
+            padding: 8px 12px;
+            border: 0;
+            margin: 8px 0;
+
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        form {
+            padding: 16px;
+            margin: 0 24px;
+        }
+
+        section:nth-child(odd) form{
+            background-color: var(--background-color-ternary);
+        }
+
+        section:nth-child(even) form{
+            background-color: var(--background-color-secondary);
+        }
+
+        input::placeholder,
+        select,
+        select::placeholder,
+        textarea::placeholder {
+
+            color: var(--text-color-placeholder);
+        }
+
+        label {
+            color: var(--primary-color);
+        }
+
     </style>
 </head>
 <body>
