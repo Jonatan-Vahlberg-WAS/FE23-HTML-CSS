@@ -9,26 +9,63 @@
 <body>
     <main class="flex justify-center w-full p-8 bg-amber-300">
         <!-- Listing card -->
-        <section class="xl:w-2/3 md:w-auto flex xl:flex-col md:flex-row bg-white rounded-xl shadow-md">
+        <section class="lg:w-2/3 md:w-auto flex lg:flex-col md:flex-row bg-white rounded-xl shadow-md">
             <div
-                class="xl:h-96 xl:w-full md:w-96 sm:w-64 xl:rounded-t-xl xl:rounded-bl-none rounded-l-xl bg-slate-700"
+                class="lg:h-96 lg:w-full w-96  lg:rounded-t-xl lg:rounded-bl-none rounded-l-xl bg-slate-700 bg-cover bg-center flex-1 lg:flex-auto"
+                style="background-image: url('./listing_1.jpg');"
             ></div>
             <div
-                class="flex flex-col gap-3 p-6"
+                class="flex flex-col gap-3 lg:p-6 p-4 flex-1 lg:flex-auto"
             >
                 <div
-                    class="h-32 bg-red-600"
-                ></div>
-                <div
-                    class="h-60 bg-green-600 md:block hidden"
                 >
+                <p class="text-lg text-red-600">
+                    PENDING
+                </p>
+                <p
+                    class="font-bold text-xl"
+                >$ 1, 200,000</p>
+                <p class="text-gray-600">
+                    <small>
+                        417 5th ave, New York, NY 10016
+                    </small>
+                </p>
+                <div class="flex">
+                    <div class="text-center border-r-2 px-3">
+                        <p>4</p>
+                        <p>
+                            <small>beds</small>
+                        </p>
+                    </div>
+                    <div class="text-center border-r-2 px-3">
+                        <p>2</p>
+                        <p>
+                            <small>baths</small>
+                        </p>
+                    </div>
+                    <div class="text-center px-3">
+                        <p>1,200</p>
+                        <p>
+                            <small>sqft</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+                <div
+                    class="md:block hidden"
+                >
+                <p class="lg:pb-6 pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius reiciendis magni molestiae quaerat sapiente! Ratione, aliquid! Mollitia recusandae tempora ut quam nihil unde ab ipsum, quia laudantium excepturi at ratione.</p>
 
+                <p class="lg:pb-6 pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eaque id, blanditiis possimus libero non veritatis cupiditate nesciunt ea adipisci, quidem ullam voluptatem iure, accusantium dolor ipsam iste reprehenderit eius.
+                Voluptatum, est! Tempora pariatur suscipit nihil, neque sapiente quis voluptas facilis autem! Deleniti error, quos ipsum nam obcaecati dolore delectus blanditiis laboriosam iusto labore amet natus est non corrupti temporibus.</p>
+
+                <p class="lg:pb-6 pb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae aut rerum unde, maiores beatae, repudiandae impedit aperiam asperiores accusamus repellendus ipsam amet. Culpa ratione eveniet laboriosam quam earum, dolores fuga?</p>
                 </div>
                 <div
-                    class="flex justify-start">
+                    class="flex">
                     <button
-                        class="px-3 py-2 bg-black text-2xl"
-                    >Contact</button>
+                        class="px-3 py-2 bg-red-500 text-white text-xl w-full lg:w-auto rounded-lg"
+                    >Contact Listing agent</button>
                 </div>
             </div>
         </section>
